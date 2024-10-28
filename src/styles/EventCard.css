@@ -1,0 +1,15 @@
+
+
+@keyframes pulseRed {
+    0%, 100% {
+      color: rgb(255, 0, 200);
+    }
+    50% {
+      color: #c37fff; 
+    }
+  }
+  
+  .event-date {
+    animation: pulseRed 1.5s ease-in-out infinite; 
+  }
+   

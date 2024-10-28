@@ -1,0 +1,65 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  opacity: 1;
+  background-image: url('../public/assets/project.jpg');
+  background-size: cover;           
+  background-position: center;      
+  background-repeat: no-repeat;     
+}
+
+.loader-logo img {
+  width: 100px;
+  animation: rotate 1.5s linear infinite;
+}
+
+.loader-text {
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  animation: fadeInText 1.5s ease-in-out infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeInText {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 600px) {
+  .loader-logo img {
+    width: 80px;  
+  }
+  
+  .loader-text {
+    font-size: 1.2rem;  
+  }
+}
